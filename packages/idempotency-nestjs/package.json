@@ -1,0 +1,42 @@
+{
+  "name": "@aif/idempotency-nestjs",
+  "version": "0.1.0",
+  "description": "NestJS integration module for AIF idempotency core",
+  "license": "MIT",
+  "author": "Bounkhong (AIF)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aif/idempotency-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aif/idempotency-package/issues"
+  },
+  "homepage": "https://github.com/aif/idempotency-package#readme",
+  "keywords": ["idempotency", "nestjs", "nodejs", "backend"],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@aif/idempotency-core": "workspace:*",
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/core": "^10.4.15",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --passWithNoTests",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

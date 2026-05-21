@@ -1,0 +1,38 @@
+{
+  "name": "@aif/idempotency-adapter-redis",
+  "version": "0.1.0",
+  "description": "Redis idempotency store adapter for AIF core",
+  "license": "MIT",
+  "author": "Bounkhong (AIF)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aif/idempotency-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aif/idempotency-package/issues"
+  },
+  "homepage": "https://github.com/aif/idempotency-package#readme",
+  "keywords": ["idempotency", "adapter", "redis", "nodejs"],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@aif/idempotency-core": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --passWithNoTests",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
