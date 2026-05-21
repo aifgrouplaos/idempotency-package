@@ -1,18 +1,18 @@
-# @aif/idempotency-adapter-memory
+# @bounkhong/idempotency-adapter-memory
 
 In-memory idempotency store implementation for local development and tests.
 
 ## Install
 
 ```bash
-pnpm add @aif/idempotency-adapter-memory @aif/idempotency-core
+pnpm add @bounkhong/idempotency-adapter-memory @bounkhong/idempotency-core
 ```
 
 ## Usage
 
 ```ts
-import { IdempotencyService } from "@aif/idempotency-core";
-import { MemoryIdempotencyStore } from "@aif/idempotency-adapter-memory";
+import { IdempotencyService } from "@bounkhong/idempotency-core";
+import { MemoryIdempotencyStore } from "@bounkhong/idempotency-adapter-memory";
 
 const service = new IdempotencyService(new MemoryIdempotencyStore());
 ```

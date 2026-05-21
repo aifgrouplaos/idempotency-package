@@ -23,10 +23,10 @@ importers:
 
   examples/nest-orders-payments-demo:
     dependencies:
-      '@aif/idempotency-adapter-redis':
+      '@bounkhong/idempotency-adapter-redis':
         specifier: workspace:*
         version: link:../../packages/idempotency-adapter-redis
-      '@aif/idempotency-nestjs':
+      '@bounkhong/idempotency-nestjs':
         specifier: workspace:*
         version: link:../../packages/idempotency-nestjs
       '@nestjs/common':
@@ -53,19 +53,19 @@ importers:
 
   packages/idempotency-adapter-memory:
     dependencies:
-      '@aif/idempotency-core':
+      '@bounkhong/idempotency-core':
         specifier: workspace:*
         version: link:../idempotency-core
 
   packages/idempotency-adapter-redis:
     dependencies:
-      '@aif/idempotency-core':
+      '@bounkhong/idempotency-core':
         specifier: workspace:*
         version: link:../idempotency-core
 
   packages/idempotency-adapter-sql:
     dependencies:
-      '@aif/idempotency-core':
+      '@bounkhong/idempotency-core':
         specifier: workspace:*
         version: link:../idempotency-core
 
@@ -73,7 +73,7 @@ importers:
 
   packages/idempotency-nestjs:
     dependencies:
-      '@aif/idempotency-core':
+      '@bounkhong/idempotency-core':
         specifier: workspace:*
         version: link:../idempotency-core
       '@nestjs/common':

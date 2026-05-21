@@ -1,11 +1,11 @@
-# @aif/idempotency-adapter-redis
+# @bounkhong/idempotency-adapter-redis
 
 Redis-backed idempotency store using `SET NX + EX` for atomic begin semantics.
 
 ## Install
 
 ```bash
-pnpm add @aif/idempotency-adapter-redis @aif/idempotency-core
+pnpm add @bounkhong/idempotency-adapter-redis @bounkhong/idempotency-core
 ```
 
 ## Redis client contract
@@ -23,7 +23,7 @@ interface RedisLike {
 ## Usage
 
 ```ts
-import { RedisIdempotencyStore } from "@aif/idempotency-adapter-redis";
+import { RedisIdempotencyStore } from "@bounkhong/idempotency-adapter-redis";
 
 const store = new RedisIdempotencyStore(redisClient);
 ```

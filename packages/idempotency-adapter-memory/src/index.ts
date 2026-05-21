@@ -1,4 +1,4 @@
-import type { BeginResult, ErrorMeta, IdempotencyRecord, IdempotencyStore, ResponseMeta } from "@aif/idempotency-core";
+import type { BeginResult, ErrorMeta, IdempotencyRecord, IdempotencyStore, ResponseMeta } from "@bounkhong/idempotency-core";
 
 const now = () => new Date();
 

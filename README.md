@@ -17,11 +17,11 @@ Behavior guarantees:
 
 ## Packages
 
-- `@aif/idempotency-core`: store contract, state machine, idempotency orchestration
-- `@aif/idempotency-nestjs`: NestJS module, decorator, interceptor
-- `@aif/idempotency-adapter-memory`: in-memory store for dev/tests
-- `@aif/idempotency-adapter-sql`: ORM-agnostic SQL adapter
-- `@aif/idempotency-adapter-redis`: Redis adapter using `SET NX + TTL`
+- `@bounkhong/idempotency-core`: store contract, state machine, idempotency orchestration
+- `@bounkhong/idempotency-nestjs`: NestJS module, decorator, interceptor
+- `@bounkhong/idempotency-adapter-memory`: in-memory store for dev/tests
+- `@bounkhong/idempotency-adapter-sql`: ORM-agnostic SQL adapter
+- `@bounkhong/idempotency-adapter-redis`: Redis adapter using `SET NX + TTL`
 - `examples/nest-orders-payments-demo`: runnable Nest demo
 
 ## Quick start
@@ -44,7 +44,7 @@ Then run the curl scenarios in `examples/nest-orders-payments-demo/README.md`.
 
 ## Express and Fastify quickstart patterns
 
-Dedicated framework packages are planned, but you can integrate now with a small wrapper around `@aif/idempotency-core`.
+Dedicated framework packages are planned, but you can integrate now with a small wrapper around `@bounkhong/idempotency-core`.
 
 ### Express pattern
 
@@ -56,8 +56,8 @@ import {
   IdempotencyConflictError,
   IdempotencyKeyRequiredError,
   type IdempotencyPolicy
-} from "@aif/idempotency-core";
-import { RedisIdempotencyStore } from "@aif/idempotency-adapter-redis";
+} from "@bounkhong/idempotency-core";
+import { RedisIdempotencyStore } from "@bounkhong/idempotency-adapter-redis";
 
 const app = express();
 app.use(express.json());
@@ -120,8 +120,8 @@ import {
   defaultFingerprintBuilder,
   IdempotencyConflictError,
   IdempotencyKeyRequiredError
-} from "@aif/idempotency-core";
-import { SqlIdempotencyStore } from "@aif/idempotency-adapter-sql";
+} from "@bounkhong/idempotency-core";
+import { SqlIdempotencyStore } from "@bounkhong/idempotency-adapter-sql";
 
 const app = Fastify();
 const service = new IdempotencyService(new SqlIdempotencyStore(sqlDriver));

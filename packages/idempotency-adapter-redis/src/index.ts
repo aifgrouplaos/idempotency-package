@@ -1,4 +1,4 @@
-import type { BeginResult, ErrorMeta, IdempotencyRecord, IdempotencyStore, ResponseMeta } from "@aif/idempotency-core";
+import type { BeginResult, ErrorMeta, IdempotencyRecord, IdempotencyStore, ResponseMeta } from "@bounkhong/idempotency-core";
 
 export interface RedisLike {
   set(key: string, value: string, opts: { NX?: boolean; EX?: number }): Promise<"OK" | null>;

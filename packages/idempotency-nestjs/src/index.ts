@@ -19,7 +19,7 @@ import {
   defaultFingerprintBuilder,
   type IdempotencyPolicy,
   type IdempotencyStore
-} from "@aif/idempotency-core";
+} from "@bounkhong/idempotency-core";
 
 const TOKEN_STORE = "IDEMPOTENCY_STORE";
 const TOKEN_POLICIES = "IDEMPOTENCY_POLICIES";

@@ -1,11 +1,11 @@
-# @aif/idempotency-adapter-sql
+# @bounkhong/idempotency-adapter-sql
 
 SQL-backed idempotency store with ORM-agnostic driver interface.
 
 ## Install
 
 ```bash
-pnpm add @aif/idempotency-adapter-sql @aif/idempotency-core
+pnpm add @bounkhong/idempotency-adapter-sql @bounkhong/idempotency-core
 ```
 
 ## Driver contract
@@ -21,7 +21,7 @@ interface SqlDriver {
 ## Usage
 
 ```ts
-import { SqlIdempotencyStore, createSqlSchema, cleanupExpiredSql } from "@aif/idempotency-adapter-sql";
+import { SqlIdempotencyStore, createSqlSchema, cleanupExpiredSql } from "@bounkhong/idempotency-adapter-sql";
 
 const store = new SqlIdempotencyStore(driver, "idempotency_records");
 ```

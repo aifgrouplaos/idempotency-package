@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { IdempotencyService, defaultFingerprintBuilder, type IdempotencyPolicy } from "@aif/idempotency-core";
+import { IdempotencyService, defaultFingerprintBuilder, type IdempotencyPolicy } from "@bounkhong/idempotency-core";
 import { MemoryIdempotencyStore } from "../src/index.js";
 
 const policy: IdempotencyPolicy = {

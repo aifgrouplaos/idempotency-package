@@ -23,12 +23,12 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: pnpm test
-      - name: Publish @aif packages
+      - name: Publish @bounkhong packages
         run: |
-          pnpm --filter @aif/idempotency-core publish --access public --no-git-checks --provenance
-          pnpm --filter @aif/idempotency-adapter-memory publish --access public --no-git-checks --provenance
-          pnpm --filter @aif/idempotency-adapter-sql publish --access public --no-git-checks --provenance
-          pnpm --filter @aif/idempotency-adapter-redis publish --access public --no-git-checks --provenance
-          pnpm --filter @aif/idempotency-nestjs publish --access public --no-git-checks --provenance
+          pnpm --filter @bounkhong/idempotency-core publish --access public --no-git-checks --provenance
+          pnpm --filter @bounkhong/idempotency-adapter-memory publish --access public --no-git-checks --provenance
+          pnpm --filter @bounkhong/idempotency-adapter-sql publish --access public --no-git-checks --provenance
+          pnpm --filter @bounkhong/idempotency-adapter-redis publish --access public --no-git-checks --provenance
+          pnpm --filter @bounkhong/idempotency-nestjs publish --access public --no-git-checks --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

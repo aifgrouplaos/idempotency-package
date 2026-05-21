@@ -1,5 +1,5 @@
 {
-  "name": "@aif/idempotency-adapter-redis",
+  "name": "@bounkhong/idempotency-adapter-redis",
   "version": "0.1.0",
   "description": "Redis idempotency store adapter for AIF core",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@aif/idempotency-core": "workspace:*"
+    "@bounkhong/idempotency-core": "workspace:*"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

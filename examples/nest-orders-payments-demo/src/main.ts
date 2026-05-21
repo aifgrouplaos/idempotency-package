@@ -3,8 +3,8 @@ import "dotenv/config";
 import { Controller, Module, Post, Body, UseInterceptors } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
 import { Redis } from "ioredis";
-import { RedisIdempotencyStore } from "@aif/idempotency-adapter-redis";
-import { IdempotencyModule, IdempotencyInterceptor, UseIdempotency, createDefaultPolicy } from "@aif/idempotency-nestjs";
+import { RedisIdempotencyStore } from "@bounkhong/idempotency-adapter-redis";
+import { IdempotencyModule, IdempotencyInterceptor, UseIdempotency, createDefaultPolicy } from "@bounkhong/idempotency-nestjs";
 
 const redis = new Redis({
   host: process.env.REDIS_HOST ?? "127.0.0.1",

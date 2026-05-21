@@ -1,11 +1,11 @@
-# @aif/idempotency-core
+# @bounkhong/idempotency-core
 
 Core idempotency primitives and orchestration, independent of framework and storage.
 
 ## Install
 
 ```bash
-pnpm add @aif/idempotency-core
+pnpm add @bounkhong/idempotency-core
 ```
 
 ## What it provides
@@ -30,8 +30,8 @@ import {
   IdempotencyService,
   defaultFingerprintBuilder,
   type IdempotencyPolicy
-} from "@aif/idempotency-core";
-import { MemoryIdempotencyStore } from "@aif/idempotency-adapter-memory";
+} from "@bounkhong/idempotency-core";
+import { MemoryIdempotencyStore } from "@bounkhong/idempotency-adapter-memory";
 
 const service = new IdempotencyService(new MemoryIdempotencyStore());
 

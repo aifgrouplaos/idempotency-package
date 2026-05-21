@@ -11,8 +11,8 @@
     "lint": "pnpm run typecheck"
   },
   "dependencies": {
-    "@aif/idempotency-adapter-redis": "workspace:*",
-    "@aif/idempotency-nestjs": "workspace:*",
+    "@bounkhong/idempotency-adapter-redis": "workspace:*",
+    "@bounkhong/idempotency-nestjs": "workspace:*",
     "@nestjs/common": "^10.4.15",
     "@nestjs/core": "^10.4.15",
     "@nestjs/platform-express": "^10.4.15",

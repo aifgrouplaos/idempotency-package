@@ -26,11 +26,11 @@ git push origin v0.1.0
 
 ## 4) Published packages
 
-- `@aif/idempotency-core`
-- `@aif/idempotency-adapter-memory`
-- `@aif/idempotency-adapter-sql`
-- `@aif/idempotency-adapter-redis`
-- `@aif/idempotency-nestjs`
+- `@bounkhong/idempotency-core`
+- `@bounkhong/idempotency-adapter-memory`
+- `@bounkhong/idempotency-adapter-sql`
+- `@bounkhong/idempotency-adapter-redis`
+- `@bounkhong/idempotency-nestjs`
 
 ## 5) Runtime deployment in services
 

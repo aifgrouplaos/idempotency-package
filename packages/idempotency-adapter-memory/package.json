@@ -1,5 +1,5 @@
 {
-  "name": "@aif/idempotency-adapter-memory",
+  "name": "@bounkhong/idempotency-adapter-memory",
   "version": "0.1.0",
   "description": "In-memory idempotency store adapter for AIF core",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@aif/idempotency-core": "workspace:*"
+    "@bounkhong/idempotency-core": "workspace:*"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

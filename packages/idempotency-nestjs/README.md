@@ -1,11 +1,11 @@
-# @aif/idempotency-nestjs
+# @bounkhong/idempotency-nestjs
 
 NestJS integration for AIF idempotency: module setup, route decorator, and interceptor.
 
 ## Install
 
 ```bash
-pnpm add @aif/idempotency-nestjs @aif/idempotency-core
+pnpm add @bounkhong/idempotency-nestjs @bounkhong/idempotency-core
 pnpm add @nestjs/common @nestjs/core @nestjs/platform-express reflect-metadata rxjs
 ```
 
@@ -13,13 +13,13 @@ pnpm add @nestjs/common @nestjs/core @nestjs/platform-express reflect-metadata r
 
 ```ts
 import { Module, UseInterceptors } from "@nestjs/common";
-import { MemoryIdempotencyStore } from "@aif/idempotency-adapter-memory";
+import { MemoryIdempotencyStore } from "@bounkhong/idempotency-adapter-memory";
 import {
   IdempotencyModule,
   IdempotencyInterceptor,
   UseIdempotency,
   createDefaultPolicy
-} from "@aif/idempotency-nestjs";
+} from "@bounkhong/idempotency-nestjs";
 
 @Module({
   imports: [
@@ -39,7 +39,7 @@ export class AppModule {}
 
 ```ts
 import { Controller, Post, Body, UseInterceptors } from "@nestjs/common";
-import { IdempotencyInterceptor, UseIdempotency } from "@aif/idempotency-nestjs";
+import { IdempotencyInterceptor, UseIdempotency } from "@bounkhong/idempotency-nestjs";
 
 @Controller()
 @UseInterceptors(IdempotencyInterceptor)
